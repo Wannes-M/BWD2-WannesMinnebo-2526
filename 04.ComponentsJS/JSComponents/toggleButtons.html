@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voorbeeld toggle buttons</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<header class="bg-primary text-white mb-4">
+		<div class="container py-3">
+			<h1>Toggle Buttons</h1>
+			<p>Voorbeeld op <a href="https://getbootstrap.com/docs/5.3/components/buttons/#toggle-states"
+					class="btn btn-outline-light ms-2">getbootstrap.com/docs/5.3/components/buttons/#toggle-states</a></p>
+		</div>
+	</header>
+
+	<main class="container">
+		<div class="mb-4">
+			<p class="mb-0">Om dit voorbeeld te laten werken moet je enkel het script van de Bootstrap bundel toevoegen.
+			</p>
+			<p>Dit doe je best onderaan je pagina, voor je /body zodat de rest van je pagina zeker geladen is.</p>
+			<p>Merk op dat het onderscheid tussen .active en niet-.active eerder subtiel is. Het onderscheid is wel iets groter bij outline versies.</p>
+
+		</div>
+
+		<p class="d-inline-flex gap-1">
+			<button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
+			<button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle	button</button>
+		</p>
+		<p class="d-inline-flex gap-1">
+			<button type="button" class="btn btn-outline-primary" data-bs-toggle="button">Toggle button</button>
+			<button type="button" class="btn btn-outline-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+		</p>
+		<p class="d-inline-flex gap-1">
+			<button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+			<button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+		</p>
+		<h2>Buttons met JS</h2>
+		<p class="d-inline-flex gap-1">
+			<button type="button" class="btn btn-primary" data-bs-toggle="button" id="btnToggleAll">Toggle alle knoppen!</button>
+		</p>
+
+	</main>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+
+	<script>
+		/*
+		*	Dit script staat na het Bootstrap script.
+		*  Dit script is om de voorbeelden eenvoudiger te houden embedded in plaats van gelinkt (het staat in het html bestand)
+		*/
+
+		// het volgende voorbeeld is geïnspireerd op https://getbootstrap.com/docs/5.3/components/buttons/#methods
+
+		const btnToggleAll = document.querySelector('#btnToggleAll');
+
+		// hang een eventListener aan de btnToggleAll, die reageert op het "click" event
+		btnToggleAll.addEventListener("click", (event) => {
+			// zoek alle elementen in het document die een class ".btn" hebben en 
+			// loop die verzameling van DOM - elementen
+			// DOM staat voor Document Object Model 
+			// -> dat is het geheel van alle elementen en objecten in het Document
+			document.querySelectorAll(".btn").forEach(buttonElement => {
+				// probeer van elk buttonElement een Bootstrap Button instantie op te halen
+				// en als die nog niet bestaat, maak die dan aan.
+				// En als je die referentie dan hebt, voer dan de Bootstrap toggle() functie
+				// uit op die button.
+				bootstrap.Button.getOrCreateInstance(buttonElement).toggle();
+			});
+		});
+
+	</script>
+</body>
+
+</html>

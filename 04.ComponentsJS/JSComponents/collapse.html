@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voorbeeld Collapse</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<header class="bg-primary text-white mb-4">
+		<div class="container py-3">
+			<h1>Collapse</h1>
+			<p>Voorbeeld op <a href="https://getbootstrap.com/docs/5.3/components/collapse/"
+					class="btn btn-outline-light ms-2">getbootstrap.com/docs/5.3/components/collapse/</a></p>
+		</div>
+	</header>
+
+	<main class="container">
+		<div class="mb-4">
+			<p class="mb-0">Om dit voorbeeld te laten werken moet je enkel het script van de Bootstrap bundel toevoegen.
+			</p>
+			<p>Dit doe je best onderaan je pagina, voor je /body zodat de rest van je pagina zeker geladen is.</p>
+			<p>Je doet dit best op een <span class="text-primary">&lt;button&gt;</span> element waarop je 2 data- attributen toepast :</p>
+			<dl>
+				<dt class="text-primary">data-bs-target</dt>
+				<dd>verwijst naar het element dat je wil aanpassen</dd>
+				<dt class="text-primary">data-bs-toggle="collapse" </dt>
+				<dd>omdat je een collapse-actie wil uitvoeren als hier wordt op geklikt.</dd>
+			</dl>
+			<p>Dit wordt dan toegepast op een element met class .collapse en met de id waarnaar je verwees in data-bs-target.</p>
+
+		</div>
+
+		<p class="d-inline-flex gap-1">
+			<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+				aria-expanded="false" aria-controls="collapseExample">
+				Button with data-bs-target
+			</button>
+		</p>
+		<div class="collapse" id="collapseExample">
+			<div class="card card-body">
+				Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+				user activates the relevant trigger.
+			</div>
+		</div>
+	</main>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
