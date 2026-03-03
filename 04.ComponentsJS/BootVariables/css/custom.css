@@ -1,0 +1,60 @@
+/* Eigen css, waarmee je de :root css variabelen overschrijft 
+ * 
+ * Meer uitgebreide mogelijkheden via SASS en SCSS buildtools.
+ * 
+ * Let op het het overschrijven van de properties van de selectoren
+ * door !important.
+*/
+
+:root {
+	--custom-primary: #f7fff1;
+	--custom-primary-dark-1: #e71111;
+	--custom-primary-dark-2: #4d1d1c;
+	--custom-primary-dark-3: #003d00;
+	--custom-primary-dark-4: #001d00;
+	--custom-primary-dark-5: #000000;
+	--custom-primary-light-1: #e70404;
+	--custom-primary-light-2: #c40000;
+	--custom-primary-light-3: #feff80;
+	--custom-primary-light-4: #ffffa0;
+	--custom-primary-light-5: #ffffd0;
+}
+
+/* a */
+a {
+	color: var(--custom-primary-dark-2);
+}
+a:hover {
+	color: var(--custom-primary-dark-1);
+}
+
+/* btn-primary */
+.btn-primary {
+	background-color: var(--custom-primary-dark-2);
+	border-color: var(--custom-primary-light-2);
+	color: var(--custom-primary-light-2);
+}
+
+.btn-primary:hover{
+	background-color: var(--custom-primary-dark-3);
+	border-color: var(--custom-primary);
+	color: var(--custom-primary);
+}
+
+/* bg-primary */
+.bg-primary {
+	background-color: var(--custom-primary-dark-2)  !important;
+}
+
+/* bg-primary-subtle */
+.bg-primary-subtle {
+	background-color : var(--custom-primary-light-5) !important;
+}
+
+
+/* alert-primary */
+.alert-primary {
+	background-color: var(--custom-primary-light-4);
+	border-color: var(--custom-primary-light-2)!important;
+	color: var(--custom-primary-dark-3);
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voorbeeld modals</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<header class="bg-primary text-white mb-4">
+		<div class="container py-3">
+			<h1>Modals</h1>
+			<p>Voorbeeld op <a href="https://getbootstrap.com/docs/5.3/components/modal/"
+					class="btn btn-outline-light ms-2">getbootstrap.com/docs/5.3/components/modal/</a></p>
+		</div>
+	</header>
+
+	<main class="container">
+		<div class="d-flex gap-3">
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				Start demo modal
+			</button>
+
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalVert">
+				Start verticaal gecentreerde demo modal
+			</button>
+
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+				Launch static backdrop modal
+			</button>
+
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+				data-bs-target="#scrollableStaticBackdrop">
+				Launch scrollable static backdrop modal
+			</button>
+
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+				data-bs-target="#fullscreenModal">
+				fullscreen modal
+			</button>
+		</div>
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>Deze modal kan je heel gemakkelijk sluiten.</p>
+						<p>Klik maar ergens!</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalVert" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalVertLabel">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>Deze modal kan je heel gemakkelijk sluiten.</p>
+						<p>En is ook verticaal gecentreerd door <span class="text-danger">modal-dialog-centered</span></p>
+						<p>Klik maar ergens!</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+			aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>Deze modal kan je niet meer sluiten door er buiten te klikken.</p>
+						<p>Dit komt door de <em><span class="text-danger">data-bs-backdrop</span>="<span
+									class="text-warning">static</span>"</em> op de .modal</p>
+						<p>Klik maar ergens!</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Understood</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Scrollable modal -->
+		<div class="modal fade" id="scrollableStaticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+			tabindex="-1" aria-labelledby="scrollableStaticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="scrollableStaticBackdropLabel">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+
+						<div>
+							<p>LEGAL COMMUNICATION</p>
+							<p> Ref: OMJ-982/LC71/§256</p>
+							<p> Case No. 1798-CV-506</p>
+							<p> December 14, 2025</p>
+							<p>RE: BUTTON STATE ON KULOKET IS UNCLEAR</p>
+							<p>ADDRESSED TO: Student Graduaat Odisee</p>
+							<p>
+								**OFFICE OF THE DEAN OF STUDENT AFFAIRS**<br>
+								**Odisee University College**<br>
+								**In re: Button State on KULoket (Case No. 2023-ODI-42)**<br>
+							</p>
+							<p>1. Whereas, pursuant to **Article 7.12(b)** of the *Flemish Higher Education Interface
+								Accessibility Act (FHEIAA)*, all digital administrative portals must maintain "unambiguous and
+								conspicuously labeled interactive elements" (hereinafter referred to as "buttons"); and whereas
+								the petitioner has alleged, heretofore, that the current button state fails to meet the
+								statutory clarity requirements under **Subsection 3.2.1** of the *Decree on Pedagogical
+								Ergonomics* (2019), this office hereby issues the following response. </p>
+							<p>2. Be it resolved that, in accordance with **Precedent 42-ULB v. VUB** (2021), wherein the Court
+								of Administrative Widgets held that "a button's opacity shall not be less than 70% nor its
+								labeling more than 12 words," the current KULoket interface is hereby deemed *prima facie*
+								non-compliant. Furthermore, the petitioner's ancillary demand for a "button that brings [them]
+								drinks" is noted but dismissed under **Clause 9(f)** of the *Beverage Provision Limitation
+								Statute*, which explicitly prohibits "the commingling of hydration services with academic
+								administrative interfaces." </p>
+							<p>3. Wherefore, this office shall direct the KULoket Technical Oversight Committee (KTOC) to
+								remediate the button's state within **thirty (30) calendar days**, pursuant to **Section 45(c)**
+								of the *Digital Usability Enforcement Guidelines*. Failure to comply may result in sanctions
+								under **Odisee Policy 12.8: "You Had One Job"**, including but not limited to mandatory
+								sensitivity training for UI designers.</p>
+							<p>Respectfully submitted, </p>
+							<p>
+								**Prof. Dr. J. Van Den Legalese**<br>
+								Dean of Student Affairs<br>
+								*Odisee University College*<br>
+							</p>
+							<p>**CC:** KTOC, Flemish Ministry of Education (Beverage Division) </p>
+							<p>Respectfully submitted,</p>
+							<p>Atty. Legalis Fictionum, Esq.</p>
+							<p>Principal, Fictionum &amp; Associates</p>
+							<p>Bar Number: #LC14155</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Understood</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="fullscreenModalLabel">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>Deze modal neemt heel het scherm in.</p>
+						<p>Hadden we dat ook niet beter gedaan voor die legal mumbo-jumbo?</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

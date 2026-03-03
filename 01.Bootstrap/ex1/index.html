@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Galactic Pizza Racers – Bootstrap Oefening</title>
+
+	<!-- Bootstrap CSS via CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+	<!-- HERO / HEADER -->
+	<header class="bg-dark text-white py-5 mb-4">
+		<div class="container">
+			<p class="text-uppercase fw-bold mb-1 fs-6 text-muted">
+				Game overview
+			</p>
+			<h1 class="display-4 fw-bold mb-2">
+				Galactic Pizza Racers
+			</h1>
+			<p class="lead">
+				Race door de ruimte, ontwijk asteroïden en bezorg pizza’s sneller dan het licht.
+			</p>
+		</div>
+	</header>
+
+	<main>
+		<!-- INLEIDING + TYPOGRAFIE -->
+		<section class="container mb-5">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="h3 fw-bold mb-3">Waarom deze pagina?</h2>
+					<p class="mb-3">
+						Deze pagina toont hoe je met <span class="fw-bold">Bootstrap</span> snel een
+						nette layout maakt met typografie, afbeeldingen, tabellen en het grid-systeem.
+					</p>
+					<p class="fst-italic mb-3">
+						Let op de verschillende tekstgroottes
+						<span class="fs-6">(fs-6)</span>,
+						<span class="fs-5">fs-5</span> en
+						<span class="fs-4 fw-bold">fs-4</span>.
+					</p>
+					<p class="text-uppercase">
+						this text is uppercased met <code>.text-uppercase</code>
+					</p>
+				</div>
+				<div class="col-md-3">
+					<div class="p-3 bg-white border rounded shadow-sm">
+						<h3 class="h5 text-primary fw-bold mb-2">Snelle info</h3>
+						<p class="mb-1"><strong>Genre:</strong> Arcade racing</p>
+						<p class="mb-1"><strong>Spelers:</strong> 1–4</p>
+						<p class="mb-0 text-muted"><small>Let op: zeer verslavend.</small></p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<img src="img/Galactic_Pizza_Racers_BWD2_tn.jpg" class="img-fluid img-thumbnail rounded float-end" alt="4 Galactic Pizza Racers">
+				</div>
+			</div>
+		</section>
+
+		<!-- GRID: 3 FEATURES (col-12 col-md-4) -->
+		<section class="container mb-5">
+			<h2 class="h3 mb-4">Belangrijkste features</h2>
+
+			<div class="row g-4">
+				<div class="col-12 col-md-4">
+					<div class="h-100 p-3 bg-white border rounded">
+						<h3 class="h5 text-success fw-bold mb-2">Ruimtebanen</h3>
+						<p class="mb-0">
+							Race over zwevende pizza-dozen, wormgaten en meteorietvelden.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4">
+					<div class="h-100 p-3 bg-white border rounded">
+						<h3 class="h5 text-danger fw-bold mb-2">Power-ups</h3>
+						<p class="mb-0">
+							Verzamel turbo-saus, extra kaas-schilden en peperoni-raketten.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4">
+					<div class="h-100 p-3 bg-white border rounded">
+						<h3 class="h5 text-info fw-bold mb-2">Co-op mode</h3>
+						<p class="mb-0">
+							Speel samen met vrienden en bezorg pizza’s als een echt team.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- AFBEELDINGEN: IMG-FLUID, THUMBNAIL, ALIGNMENT -->
+		<section class="container mb-5">
+			<h2 class="h3 mb-4">Screenshots</h2>
+
+			<div class="row g-4">
+				<div class="col-12 col-md-6">
+					<h3 class="h5 mb-2">In-game actie</h3>
+					<img src="img/01.jpg" alt="Gameplay screenshot" class="img-fluid rounded mb-2">
+					<p class="text-muted mb-0">
+						Deze afbeelding gebruikt <code>.img-fluid</code> zodat ze netjes mee schaalt.
+					</p>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<h3 class="h5 mb-2">In-game actie</h3>
+					<img src="img/01.jpg" alt="Gameplay screenshot" class="img-fluid rounded mb-2">
+					<p class="text-muted mb-0">
+						Deze afbeelding gebruikt <code>.img-fluid</code> zodat ze netjes mee schaalt.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- FIGURE -->
+		<section class="container mb-5">
+			<h2 class="h3 mb-4">Concept art</h2>
+
+			<figure class="figure">
+				<img src="img/03.jpg" class="figure-img img-fluid rounded" alt="Concept art van het spel">
+				<figcaption class="figure-caption text-end">
+					Concept art van de hoofdbaan in Galactic Pizza Racers, met neonreclames en zwevende pizza’s.
+				</figcaption>
+			</figure>
+		</section>
+
+		<!-- TABEL (table, table-striped, table-primary) -->
+		<section class="container mb-5">
+			<h2 class="h3 mb-4">Racers overzicht</h2>
+
+			<div class="table-responsive mb-2">
+				<table class="table table-striped table-bordered table-primary align-middle mb-0">
+					<thead class="table-dark">
+						<tr>
+							<th scope="col">Naam</th>
+							<th scope="col">Voertuig</th>
+							<th scope="col">Speciale vaardigheid</th>
+							<th scope="col">Moeilijkheid</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Nova Slice</td>
+							<td>Photon Scooter</td>
+							<td>Instant turbo boost</td>
+							<td>Beginner</td>
+						</tr>
+						<tr>
+							<td>Captain Crust</td>
+							<td>Deep Dish Cruiser</td>
+							<td>Extra zwaar schild</td>
+							<td>Gemiddeld</td>
+						</tr>
+						<tr>
+							<td>Mozza Queen</td>
+							<td>Cheese Comet</td>
+							<td>Stun laser van gesmolten kaas</td>
+							<td>Gevorderd</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="text-muted mb-0">
+				Deze tabel gebruikt <code>.table</code>, <code>.table-striped</code>,
+				<code>.table-bordered</code> en een variantkleur.
+			</p>
+		</section>
+
+			<div class="form-floating mb-3">
+				<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+				<label for="floatingInput">Email address</label>
+			</div>
+			<input type="email" class="form-control" aria-describedby="emailHelp">
+			<div id="emailHelp" class="form-text">
+				We'll never share your email with anyone else.
+			</div>
+		<!-- KLEUREN / THEMA-DEEL -->
+		<section class="container mb-5">
+			<h2 class="h3 mb-4">Kleurenschema</h2>
+
+			<div class="row g-3 mb-4">
+				<div class="col-6 col-md-3">
+					<div class="p-3 bg-primary text-white text-center rounded">primary</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="p-3 bg-success text-white text-center rounded">success</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="p-3 bg-warning text-dark text-center rounded">warning</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="p-3 bg-danger text-white text-center rounded">danger</div>
+				</div>
+			</div>
+
+			<div class="p-3 rounded" data-bs-theme="dark">
+				<p class="mb-0 text-light">
+					Dit blok gebruikt <code>data-bs-theme="dark"</code> zodat de kleuren zich aanpassen
+					aan dark mode binnen dit element.
+				</p>
+			</div>
+		</section>
+	</main>
+	<!-- FOOTER -->
+	<footer class="bg-dark text-white">
+		<div class="container py-3">
+			<p class="mb-0 small text-center">
+				&copy; 2025 Galactic Pizza Racers – Demo voor Bootstrap layout &amp; content.
+			</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voorbeeld CSS Variabelen</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-primary-subtle">
+	<header class="bg-primary text-white mb-4">
+		<div class="container py-3">
+			<h1>Aangepaste kleuren met variabelen</h1>
+			<p>Voorbeeld op <a href="https://getbootstrap.com/docs/5.3/components/alerts/"
+					class="btn btn-outline-light ms-2">getbootstrap.com/docs/5.3/components/alerts/</a></p>
+		</div>
+	</header>
+
+	<main class="container">
+		<div class="mb-4">
+			<p class="mb-0">Dit voorbeeld demonstreert voornamelijk het gebruik van variabelen in css.</p>
+			<p>Wanneer je gebruik maakt van een framework als Bootstrap is het meestal beter om met het framework te werken en niet tegen het framework door je eigen css te schrijven. Maar je kan.</p>
+			<p>Een betere manier is door dit via de buildtools te doen en rechtstreeks de <a href="https://getbootstrap.com/docs/5.3/customize/css-variables/">CSS variabelen van Bootstrap</a> aan te passen, voor het build-proces.</p>
+
+		</div>
+
+		<div id="liveAlertPlaceholder"></div>
+		<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+	</main>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+
+	<script>
+		/*
+		*	Dit script staat na het Bootstrap script.
+		*  Dit script is om de voorbeelden eenvoudiger te houden embedded in plaats van gelinkt (het staat in het html bestand)
+		*/
+
+		// bewaar een verwijzing naar het element waarin de alerts moeten komen 
+		const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+
+		// Maak een functie "appendAlert()" aan, die je kan aanroepen met 
+		// * de tekst die getoond moet worden (message)
+		// * de kleur voor het alert (type)
+		const appendAlert = (message, type) => {
+			// maak een div aan die als 'wrapper' dient voor de alert
+			const wrapper = document.createElement('div');
+			// stop de alert met message en type in de wrapper div
+			wrapper.innerHTML =
+				`<div class="alert alert-${type} alert-dismissible" role="alert">
+					<div>${message}</div>
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>`;
+			
+			// voeg de wrapper toe aan de html pagina, op de gewenste plaats
+			alertPlaceholder.append(wrapper);
+		}
+
+		// haal een verwijzing op naar de knop waarop je wil klikken
+		const alertTrigger = document.getElementById('liveAlertBtn');
+		// als dit element bestaat 
+		if (alertTrigger) {
+			// dan hangen we er een functie aan die uitgevoerd wordt als er op ge"click"d wordt.
+			alertTrigger.addEventListener('click', () => {
+				// en die functie roept dan de appendAlert functie aan met een boodschap en type 'success'
+				appendAlert('Bedankt zeg, het alarm gaat nu af!', 'primary');
+			})
+		}
+	</script>
+</body>
+
+</html>
