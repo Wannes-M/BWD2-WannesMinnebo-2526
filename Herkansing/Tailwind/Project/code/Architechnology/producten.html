@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producten - Architechnology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-950 text-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 border-b border-purple-500 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent">
+                        Architechnology
+                    </h1>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-gray-300 hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="info.html" class="text-gray-300 hover:text-cyan-400 transition">Info</a></li>
+                    <li><a href="producten.html" class="text-purple-400 hover:text-cyan-400 transition">Producten</a></li>
+                    <li><a href="realisaties.html" class="text-gray-300 hover:text-cyan-400 transition">Realisaties</a></li>
+                    <li><a href="contact.html" class="text-gray-300 hover:text-cyan-400 transition">Contact</a></li>
+                    <li><a href="sollicitatie.html" class="text-gray-300 hover:text-cyan-400 transition">Sollicitatie</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-gray-300 hover:text-cyan-400 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="block text-gray-300 hover:text-cyan-400 transition py-2">Home</a></li>
+                    <li><a href="info.html" class="block text-gray-300 hover:text-cyan-400 transition py-2">Info</a></li>
+                    <li><a href="producten.html" class="block text-purple-400 hover:text-cyan-400 transition py-2">Producten</a></li>
+                    <li><a href="realisaties.html" class="block text-gray-300 hover:text-cyan-400 transition py-2">Realisaties</a></li>
+                    <li><a href="contact.html" class="block text-gray-300 hover:text-cyan-400 transition py-2">Contact</a></li>
+                    <li><a href="sollicitatie.html" class="block text-gray-300 hover:text-cyan-400 transition py-2">Sollicitatie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-gradient-to-r from-purple-900 to-cyan-900 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-bold mb-4 text-cyan-400">Onze Woningconcepten</h1>
+            <p class="text-xl text-gray-300">Innovatieve architectuur voor de toekomst</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+                <!-- Product 1 -->
+                <div class="bg-gray-800 border border-purple-500 rounded-lg overflow-hidden hover:border-cyan-400 transition hover:shadow-lg hover:shadow-cyan-500/20">
+                    <div class="bg-gradient-to-br from-purple-600 to-purple-800 h-64 flex items-center justify-center">
+                        <div class="text-7xl">🏠</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-3">NeoHome Series</h3>
+                        <p class="text-gray-300 mb-4">
+                            Onze signature woning voor het moderne gezin. Met volledig geïntegreerde smart home systems en minimalistisch design.
+                        </p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li>✓ 150-250 m² flexibel indeelbaar</li>
+                            <li>✓ Energie-neutraal doornatural licht</li>
+                            <li>✓ AI-gestuurde klimaatbeheersing</li>
+                            <li>✓ Geïntegreerde domotica</li>
+                        </ul>
+                        <button class="w-full bg-gradient-to-r from-purple-600 to-cyan-600 rounded-lg py-2 font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition">
+                            Meer Info
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-gray-800 border border-cyan-500 rounded-lg overflow-hidden hover:border-purple-400 transition hover:shadow-lg hover:shadow-purple-500/20">
+                    <div class="bg-gradient-to-br from-cyan-600 to-cyan-800 h-64 flex items-center justify-center">
+                        <div class="text-7xl">🌆</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-purple-400 mb-3">UrbanPulse Lofts</h3>
+                        <p class="text-gray-300 mb-4">
+                            Compacte, stijlvolle lofts voor de stedeling. Perfect voor kleine gezinnen en young professionals.
+                        </p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li>✓ 70-120 m² open concept</li>
+                            <li>✓ Slimme opslagoplossingen</li>
+                            <li>✓ Duurzame materialen</li>
+                            <li>✓ Geluidsgeïsoleerde design</li>
+                        </ul>
+                        <button class="w-full bg-gradient-to-r from-purple-600 to-cyan-600 rounded-lg py-2 font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition">
+                            Meer Info
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-gray-800 border border-purple-500 rounded-lg overflow-hidden hover:border-cyan-400 transition hover:shadow-lg hover:shadow-cyan-500/20">
+                    <div class="bg-gradient-to-br from-purple-600 to-purple-800 h-64 flex items-center justify-center">
+                        <div class="text-7xl">🌳</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-3">EcoVilla Plus</h3>
+                        <p class="text-gray-300 mb-4">
+                            Luxueuze villa's met nadruk op duurzaamheid. Voor families die waarde hechten aan milieu en comfort.
+                        </p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li>✓ 250-400 m² met tuin</li>
+                            <li>✓ Zonnepanelen & regenwaterbenutting</li>
+                            <li>✓ Geotermische verwarming</li>
+                            <li>✓ Groen dak integratie</li>
+                        </ul>
+                        <button class="w-full bg-gradient-to-r from-purple-600 to-cyan-600 rounded-lg py-2 font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition">
+                            Meer Info
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-gray-800 border border-cyan-500 rounded-lg overflow-hidden hover:border-purple-400 transition hover:shadow-lg hover:shadow-purple-500/20">
+                    <div class="bg-gradient-to-br from-cyan-600 to-cyan-800 h-64 flex items-center justify-center">
+                        <div class="text-7xl">🔬</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-purple-400 mb-3">NanoTech Living</h3>
+                        <p class="text-gray-300 mb-4">
+                            De ultieme futuristische woning met geavanceerde materiaaltechnologie. Een statement van architectuur.
+                        </p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li>✓ Modulair en aanpasbaar</li>
+                            <li>✓ Zelfcurerende materialen</li>
+                            <li>✓ Advanced AI assistenten</li>
+                            <li>✓ Volledig te automatiseren</li>
+                        </ul>
+                        <button class="w-full bg-gradient-to-r from-purple-600 to-cyan-600 rounded-lg py-2 font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition">
+                            Meer Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customization Section -->
+            <section class="bg-gradient-to-r from-gray-800 to-gray-800 border border-purple-500 rounded-lg p-12 text-center mb-20">
+                <h2 class="text-3xl font-bold mb-4 text-cyan-400">Volledig Aanpasbaar</h2>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Al onze woningconcepten kunnen volledig naar uw wensen worden aangepast. Maat, inrichting, technologie en duurzaamheidsfeatures zijn flexibel instelbaar.
+                </p>
+                <a href="contact.html" class="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition">
+                    Vraag een Offerte Aan
+                </a>
+            </section>
+
+            <!-- Specs Table -->
+            <section>
+                <h2 class="text-3xl font-bold mb-8 text-purple-400">Technische Specificaties</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b border-purple-500">
+                                <th class="py-4 px-4 text-cyan-400 font-bold">Concept</th>
+                                <th class="py-4 px-4 text-cyan-400 font-bold">Grootte</th>
+                                <th class="py-4 px-4 text-cyan-400 font-bold">Smart Features</th>
+                                <th class="py-4 px-4 text-cyan-400 font-bold">Duurzaam</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-700">
+                                <td class="py-4 px-4">NeoHome Series</td>
+                                <td class="py-4 px-4">150-250 m²</td>
+                                <td class="py-4 px-4">AI, Domotica, IoT</td>
+                                <td class="py-4 px-4">100% Recycleerbaar</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="py-4 px-4">UrbanPulse Lofts</td>
+                                <td class="py-4 px-4">70-120 m²</td>
+                                <td class="py-4 px-4">Smart Security</td>
+                                <td class="py-4 px-4">Eco-Materialen</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="py-4 px-4">EcoVilla Plus</td>
+                                <td class="py-4 px-4">250-400 m²</td>
+                                <td class="py-4 px-4">Complete Automation</td>
+                                <td class="py-4 px-4">Energie-Neutraal</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-4">NanoTech Living</td>
+                                <td class="py-4 px-4">Variabel</td>
+                                <td class="py-4 px-4">Full AI Integration</td>
+                                <td class="py-4 px-4">Next-Gen Green Tech</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-purple-500 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold text-purple-400 mb-4">Architechnology</h3>
+                    <p class="text-gray-400">Futuristische architectuur voor morgen</p>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-cyan-400 mb-4">Navigatie</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="info.html" class="hover:text-cyan-400 transition">Over Ons</a></li>
+                        <li><a href="producten.html" class="hover:text-cyan-400 transition">Producten</a></li>
+                        <li><a href="realisaties.html" class="hover:text-cyan-400 transition">Realisaties</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-cyan-400 mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition">Contact Formulier</a></li>
+                        <li><a href="sollicitatie.html" class="hover:text-cyan-400 transition">Werkgelegenheid</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-cyan-400 mb-4">Volg Ons</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-cyan-400 transition">Facebook</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition">Instagram</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Architechnology. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

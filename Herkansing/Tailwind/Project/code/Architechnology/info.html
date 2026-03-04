@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info - Architechnology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-950 text-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 border-b border-purple-500 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent">
+                        Architechnology
+                    </h1>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-gray-300 hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="info.html" class="text-purple-400 hover:text-cyan-400 transition">Info</a></li>
+                    <li><a href="producten.html" class="text-gray-300 hover:text-cyan-400 transition">Producten</a></li>
+                    <li><a href="realisaties.html" class="text-gray-300 hover:text-cyan-400 transition">Realisaties</a></li>
+                    <li><a href="contact.html" class="text-gray-300 hover:text-cyan-400 transition">Contact</a></li>
+                    <li><a href="sollicitatie.html" class="text-gray-300 hover:text-cyan-400 transition">Sollicitatie</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-gray-300 hover:text-cyan-400 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="block text-gray-300 hover:text-cyan-400 transition py-2">Home</a></li>
+                    <li><a href="info.html" class="block text-purple-400 hover:text-cyan-400 transition py-2">Info</a></li>
+                    <li><a href="producten.html" class="block text-gray-300 hover:text-cyan-400 transition py-2">Producten</a></li>
+                    <li><a href="realisaties.html" class="block text-gray-300 hover:text-cyan-400 transition py-2">Realisaties</a></li>
+                    <li><a href="contact.html" class="block text-gray-300 hover:text-cyan-400 transition py-2">Contact</a></li>
+                    <li><a href="sollicitatie.html" class="block text-gray-300 hover:text-cyan-400 transition py-2">Sollicitatie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-gradient-to-r from-purple-900 to-cyan-900 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-bold mb-4 text-cyan-400">Over Architechnology</h1>
+            <p class="text-xl text-gray-300">Kennismaking met ons architectenbureau</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- About Section -->
+            <section class="mb-20">
+                <h2 class="text-4xl font-bold mb-8 text-purple-400">Wie Zijn Wij?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-lg text-gray-300 mb-6">
+                            Architechnology is een innovatief architectenbureau dat zich specialiseert in het ontwerpen en bouwen van futuristische woningconcepten. Met meer dan 12 jaar ervaring in de branche, hebben we een reputatie opgebouwd voor het leveren van unieke, duurzame en technologisch geavanceerde woningen.
+                        </p>
+                        <p class="text-lg text-gray-300 mb-6">
+                            Ons team bestaat uit gepassioneerde architecten, ingenieurs en designers die samen aan de voorkant van architectuurinnovatie werken. We geloven dat woningen niet alleen functioneel moeten zijn, maar ook duurzaam, mooi en toekomstbestendig.
+                        </p>
+                        <p class="text-lg text-gray-300">
+                            Met een focus op smart technology en ecologische verantwoordelijkheid, creëren we woningen die het verschil maken.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-500 to-cyan-500 rounded-lg h-96 flex items-center justify-center">
+                        <div class="text-gray-900 text-6xl">🏢</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission & Vision -->
+            <section class="mb-20">
+                <h2 class="text-4xl font-bold mb-8 text-purple-400">Missie & Visie</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 border border-purple-500 rounded-lg p-8">
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-4">Onze Missie</h3>
+                        <p class="text-gray-300">
+                            Wij streven ernaar aan iedereen de kans te geven in een futuristische, duurzame en innovatieve woning te wonen. Door middel van geavanceerde architectuur en technologie maken we de toekomst nu al een realiteit.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 border border-cyan-500 rounded-lg p-8">
+                        <h3 class="text-2xl font-bold text-purple-400 mb-4">Onze Visie</h3>
+                        <p class="text-gray-300">
+                            Een wereld waarin architectuur en technologie samenwerken om betere, duurzamere en intelligentere woningen te creëren. We zien een toekomst waar elk huis bijdraagt aan een betere planeet.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Core Values -->
+            <section class="mb-20">
+                <h2 class="text-4xl font-bold mb-8 text-purple-400">Onze Waarden</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="bg-gray-800 rounded-lg p-6 border-l-4 border-purple-500">
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">Innovatie</h3>
+                        <p class="text-gray-300">We zoeken altijd naar nieuwe manieren om architectuur te verbeteren.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border-l-4 border-cyan-500">
+                        <h3 class="text-xl font-bold text-cyan-400 mb-3">Duurzaamheid</h3>
+                        <p class="text-gray-300">Milieubewustzijn staat centraal in elk project dat we realiseren.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border-l-4 border-purple-500">
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">Kwaliteit</h3>
+                        <p class="text-gray-300">We leveren alleen werk van de hoogste standaard aan onze klanten.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border-l-4 border-cyan-500">
+                        <h3 class="text-xl font-bold text-cyan-400 mb-3">Integriteit</h3>
+                        <p class="text-gray-300">Eerlijkheid en transparantie in alles wat we doen is essentieel.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section>
+                <h2 class="text-4xl font-bold mb-8 text-purple-400">Ons Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-4xl">👨‍💼</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-cyan-400 mb-2">Jan de Vries</h3>
+                        <p class="text-gray-400">Oprichter & Hoofdarchitect</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-4xl">👩‍💼</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-2">Maria García</h3>
+                        <p class="text-gray-400">Duurzaamheidsspecialist</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-4xl">👨‍💻</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-cyan-400 mb-2">Thomas Berg</h3>
+                        <p class="text-gray-400">Smart Technology Lead</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-purple-500 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold text-purple-400 mb-4">Architechnology</h3>
+                    <p class="text-gray-400">Futuristische architectuur voor morgen</p>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-cyan-400 mb-4">Navigatie</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="info.html" class="hover:text-cyan-400 transition">Over Ons</a></li>
+                        <li><a href="producten.html" class="hover:text-cyan-400 transition">Producten</a></li>
+                        <li><a href="realisaties.html" class="hover:text-cyan-400 transition">Realisaties</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-cyan-400 mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition">Contact Formulier</a></li>
+                        <li><a href="sollicitatie.html" class="hover:text-cyan-400 transition">Werkgelegenheid</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-md font-bold text-cyan-400 mb-4">Volg Ons</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-cyan-400 transition">Facebook</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition">Instagram</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Architechnology. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
