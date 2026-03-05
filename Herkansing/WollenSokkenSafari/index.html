@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WollenSokkenSafari™</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- TODO: voeg de Bootstrap CSS CDN link toe -->
+</head>
+
+<!--
+  HUSKYSTRESS™ - Lapland Reisoverzicht
+  Bootstrap 5.3.3 oefening
+
+  Gebruik de screenshots als visuele referentie.
+  Voeg de juiste Bootstrap klassen toe op de plaatsen aangegeven met TODO.
+  Verwijder de TODO commentaren niet — ze helpen je de weg te vinden.
+-->
+
+<body class="bg-white text-dark">
+
+<!-- =============================================
+  NAVBAR
+  TODO: maak een donkere navbar (bg-black) met een blauwe border onderaan (border-info).
+  - Brand: "WollenSokkenSafari™" (vetgedrukt)
+  - Navigatielinks rechts: Highlights (#kaarten), Praktisch (#faq), Reisplanner (#contact)
+  - De navbar moet uitklappen op grote schermen (navbar-expand-lg)
+============================================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-info">
+  <div class="container ">
+    <a class="navbar-brand fw-bold" href="#">WollenSokkenSafari™</a>
+    <!-- TODO: voeg de collapse div toe met de nav-links -->
+
+    
+     <div class=" " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 collapse navbar-collapse show">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#kaarten">Highlights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">Praktisch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Reisplanner</a>
+        </li>
+      </ul>
+
+     
+      
+    </div>
+  </div>
+</nav>
+
+<!-- =============================================
+  HEADER
+  TODO: maak een header met:
+  - achtergrondkleur: bg-info, border onderaan: border-info
+  - verticale padding: py-5
+  - gecentreerde tekst (text-center)
+  - h1 in donkere kleur (text-dark)
+  - een lead paragraaf in donkere kleur
+============================================= -->
+<header class="py-5 bg-info border-bottom border-info">
+  <div class="container text-center">
+    <h1 class="text-dark">Doorkruis de sneeuw in 8 stops</h1>
+    <p class="lead text-dark">WollenSokkenSafari met de mooiste bestemmingen in Lapland.</p>
+  </div>
+</header>
+
+<!-- =============================================
+  SECTIE: KAARTEN (8 highlights)
+  TODO: gebruik een responsive grid met col-md-6 col-lg-3
+  - Elke card heeft: bg-light text-dark border-info h-100 shadow-sm
+  - Card-image bovenaan
+  - Card-body met: titel + badge, tekst, knop (btn-outline-dark btn-sm)
+  
+  Badge-kleuren (gebruik de juiste Bootstrap badge kleur):
+  - "Cool"   → bg-info text-dark
+  - "Arctic" → bg-primary text-light
+  - "Frozen" → bg-danger text-light
+============================================= -->
+<section class="container mt-4" id="kaarten">
+  <div class="row g-4">
+
+    <!-- Stop 1: Husky Safari - badge: Cool -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 bg-light text-dark border-info h-100 shadow-sm">
+        <img src="img/01.webp" class="card-img-top" alt="Husky Safari Rovaniemi">
+        <div class="card-body">
+          <h5 class="card-title">Husky Safari <span class="badge ms-1 bg-info text-dark">Cool</span></h5>
+          <p class="card-text">Het iconische beginpunt van elke reis door Lapland.</p>
+          <a href="#" class="btn btn-sm btn-outline-dark btn-sm">Ontdek deze uitstap</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stop 2: Noorderlicht - badge: Cool -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 bg-light text-dark border-info h-100 shadow-sm">
+        <img src="img/02.webp" class="card-img-top" alt="Noorderlicht">
+        <div class="card-body">
+          <h5 class="card-title">Noorderlicht <span class="badge ms-1 bg-info text-dark">Cool</span></h5>
+          <p class="card-text">Een magische lichtshow aan de Arctische hemel.</p>
+          <a href="#" class="btn btn-sm btn-outline-dark btn-sm">Ontdek deze uitstap</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stop 3: IJshotel Kittilä - badge: Cool -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 bg-light text-dark border-info h-100 shadow-sm">
+        <img src="img/03.webp" class="card-img-top" alt="IJshotel Kittilä">
+        <div class="card-body">
+          <h5 class="card-title">IJshotel Kittilä <span class="badge ms-1 bg-info text-dark">Cool</span></h5>
+          <p class="card-text">Slapen in een hotel gebouwd van ijs en sneeuw.</p>
+          <a href="#" class="btn btn-sm btn-outline-dark btn-sm">Ontdek deze uitstap</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stop 4: Rendier Ranch - badge: Arctic -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 bg-light text-dark border-info h-100 shadow-sm">
+        <img src="img/04.webp" class="card-img-top" alt="Rendier Ranch">
+        <div class="card-body">
+          <h5 class="card-title">Rendier Ranch <span class="badge ms-1 bg-primary text-light">Arctic</span></h5>
+          <p class="card-text">Authentieke Sámi cultuur en rendieren in het wild.</p>
+          <a href="#" class="btn btn-sm btn-outline-dark btn-sm">Ontdek deze uitstap</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stop 5: Snowmobile Tocht - badge: Frozen -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 bg-light text-dark border-info h-100 shadow-sm">
+        <img src="img/05.webp" class="card-img-top" alt="Snowmobile Tocht">
+        <div class="card-body">
+          <h5 class="card-title">Snowmobile Tocht <span class="badge ms-1 bg-danger text-light">Frozen</span></h5>
+          <p class="card-text">Racen door het besneeuwde woud op een sneeuwscooter.</p>
+          <a href="#" class="btn btn-sm btn-outline-dark btn-sm">Ontdek deze uitstap</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stop 6: Sauna aan het meer - badge: Frozen -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 bg-light text-dark border-info h-100 shadow-sm">
+        <img src="img/06.webp" class="card-img-top" alt="Sauna aan het meer">
+        <div class="card-body">
+          <h5 class="card-title">Sauna aan het meer <span class="badge ms-1 bg-danger text-light">Frozen</span></h5>
+          <p class="card-text">Traditionele Finse sauna gevolgd door een bad in het ijswater.</p>
+          <a href="#" class="btn btn-sm btn-outline-dark btn-sm">Ontdek deze uitstap</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stop 7: Arctisch dorp Inari - badge: Arctic -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 bg-light text-dark border-info h-100 shadow-sm">
+        <img src="img/07.webp" class="card-img-top" alt="Arctisch dorp Inari">
+        <div class="card-body">
+          <h5 class="card-title">Arctisch dorp Inari <span class="badge ms-1 bg-primary text-light">Arctic</span></h5>
+          <p class="card-text">Sfeer en traditie in een afgelegen Arctisch dorp.</p>
+          <a href="#" class="btn btn-sm btn-outline-dark btn-sm">Ontdek deze uitstap</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stop 8: Sneeuwschoenwandeling - badge: Arctic -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 bg-light text-dark border-info h-100 shadow-sm">
+        <img src="img/08.webp" class="card-img-top" alt="Sneeuwschoenwandeling">
+        <div class="card-body">
+          <h5 class="card-title">Sneeuwschoenwandeling <span class="badge ms-1 bg-primary text-light">Arctic</span></h5>
+          <p class="card-text">Rustige wandeling door het stille Arctische woud.</p>
+          <a href="#" class="btn btn-sm btn-outline-dark btn-sm">Ontdek deze uitstap</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+  SECTIE: FAQ / PRAKTISCH (Accordion)
+  TODO: maak een accordion met 3 items (bg-light text-dark border-secondary)
+  - Titels: 
+    1. "Wanneer plan ik de highlights best?"
+    2. "Moet ik alles op één plek doen?"
+    3. "Wat neem ik zeker mee?"
+  - Alle items starten collapsed (uitgevouwen = false)
+  - Gebruik data-bs-parent="#faqAccordion" zodat slechts 1 item open is
+============================================= -->
+<section class="container mt-4 mb-4" id="faq">
+  <h2 class="h4 mb-3">Praktisch &amp; tips</h2>
+  <!-- TODO: voeg de accordion HTML hier in -->
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item bg-light text-dark border-secondary" >
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         Wanneer plan ik de highlights best?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde quasi architecto mollitia, voluptatum ut ipsam officiis nihil tempora nesciunt dolorem sunt? Suscipit quaerat praesentium soluta, quas esse rem architecto aliquam!
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item bg-light text-dark border-secondary">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Moet ik alles op één plek doen?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aperiam quaerat, dolor porro tempore at amet quasi quam architecto blanditiis deserunt iste id dolores autem sequi perspiciatis maiores quis iure.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item bg-light text-dark border-secondary">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Wat neem ik zeker mee?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione tempore provident rerum error voluptas eius. Nihil minima incidunt labore, magni eius sed ipsam quaerat voluptatem ipsa? Ad iure adipisci eum.
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- =============================================
+  BUTTON GROUP
+  TODO: maak een button group (role="group") met 3 knoppen:
+  - "Top"       → btn-outline-secondary, link naar #
+  - "Praktisch" → btn-outline-secondary, link naar #faq
+  - "Reisplanner" → btn-outline-info, link naar #contact
+  Omring met een paragraaf "Snel navigeren door je overzicht." (text-secondary)
+============================================= -->
+<section class="container text-center mb-5">
+  <p class="mb-2 text-secondary">Snel navigeren door je overzicht.</p>
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-outline-secondary"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Top</a></button>
+    <button type="button" class="btn btn-outline-secondary"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#faq">Praktisch</a></button>
+    <button type="button" class="btn btn-outline-info"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#contact">Reisplanner</a></button>
+  </div>
+</section>
+
+<!-- =============================================
+  SECTIE: REISPLANNER (Formulier)
+  TODO: maak een formulier in een kaart (card bg-dark text-light border-info shadow-sm)
+  - De kaart staat in een gecentreerde kolom (col-lg-9)
+  - Elk formulierelement gebruik je de juiste Bootstrap form-klassen
+  Formuliervelden:
+  1. Tekst: "Naam"             → form-control bg-light text-dark, placeholder "bv. Sven"
+  2. Email: form-floating      → form-control bg-light text-dark, label "E-mail (voor je route)"
+  3. Input group met "#"       → label "Reislabel", placeholder "lapland-2026"
+  4. Select + date (row g-3):
+     - col-md-7: select "Kies een highlight om te starten" (8 opties uit de kaarten)
+     - col-md-5: date "Startdatum"
+  5. Range: "Activiteitentempo (0 = rustig, 10 = vol programma)", min=0 max=10 step=1 value=6
+     → toon 3 labels: 0, 5, 10 (d-flex justify-content-between)
+  6. Row met switches + file upload:
+     - col-md-6: 2 form-switch checkboxen
+       * "Meer nachtelijke stops (noorderlicht)" (checked)
+       * "Husky-rit opnemen"
+     - col-md-6: file upload "Upload een referentiebeeld (optioneel)"
+  7. Textarea "Notities" (rows=3)
+  8. Checkboxen "Checklijst":
+     * "Ik plan buffer-tijd tussen activiteiten"
+     * "Ik hou rekening met kou en juiste kledij" (checked)
+  9. Radio "Stijl van reizen":
+     * "Relax — minder activiteiten, meer sfeer"
+     * "Gebalanceerd — highlights met pauzes" (checked)
+     * "Intens — veel beleven op korte tijd"
+  10. Knop: "Verzend mijn reisplan" → btn-info text-dark btn-lg d-grid
+      → triggert een Bootstrap alert (zie JS onderaan)
+============================================= -->
+<section class="py-5 border-top border-secondary" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="text-center mb-4">
+          <h2>Reisplanner</h2>
+          <p class="mt-2 mb-0 text-secondary">Vul je voorkeuren in en "verzend" je plan. (Demo, maar volledig klikbaar.)</p>
+        </div>
+
+        <!-- TODO: voeg de card + form HTML hier in -->
+        <div class="card bg-light text-dark border-info shadow-sm">
+          <div class="card-body p-4">
+            <form id="funForm">
+              <!-- Velden 1 t/m 10 hier -->
+
+              <div class="col">
+                <label for="naam">Naam</label>
+                <input class="form-control form-control" id="naam" placeholder="bv. Sven" type="text">
+                <div class="text-secondary mb-3">Tip: dit veld is puur voor de demo.</div>
+              </div>
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="email" placeholder="naam@example.com" type="email">
+                  <label for="email">E-mail (voor je route)</label>
+                </div>
+              </div>
+              <!-- Input group -->
+              <div class="col">
+                <label for="handle">Reislabel</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="addon">#</span>
+                  <input class="form-control" aria-describedby="addon" id="handle" placeholder="lapland-2026" type="text">
+                </div>
+              </div>
+              <!-- Selects -->
+              <div class="row g-3">
+                <div class="col-7">
+                  <label for="stopSelect">Kies een highlight om te starten</label>
+                  <select class="form-select" id="stopSelect">
+                    <option value="Husky Safari">Husky Safari</option>
+                    <option value="Noorderlicht ">Noorderlicht </option>
+                    <option value="IJshotel Kittilä">IJshotel Kittilä</option>
+                    <option value="Rendier Ranch">Rendier Ranch</option>
+                    <option value="Snowmobile Tocht">Snowmobile Tocht</option>
+                    <option value="Sauna aan het meer">Sauna aan het meer</option>
+                    <option value="Arctisch dorp Inari">Arctisch dorp Inari</option>
+                    <option value="Sneeuwschoenwandeling">Sneeuwschoenwandeling</option>
+                  </select>
+                  <div class="text-secondary">Je kan later nog extra stops toevoegen.</div>
+                </div>
+                <div class="col-5">
+                  <label for="datum">Startdatum</label>
+                  <input class="form-control" id="datum" type="date">
+                  <div class="text-secondary">Kies een datum om de demo te testen.</div>
+                </div>
+              </div>
+              <!-- Range (component) -->
+              <div class="col">
+                <label class="form-label" for="tempoRange">Activiteitentempo (0 = rustig, 10 = vol programma)</label>
+                <input class="form-range" id="tempoRange" max="10" min="0" step="1" type="range" value="6">
+                <div class="row">
+                   <div class="col-4"> <label for="tempoRange" class="d-flex justify-content-between">0</label></div>
+                   <div class="col-4"> <label for="tempoRange" class="d-flex justify-content-between">5</label></div>
+                   <div class="col-4"> <label for="tempoRange" class="d-flex justify-content-between">10</label></div>
+                </div>
+              </div>
+              <!-- Switches + file input (component) -->
+              <div class="row">
+                <div class="col-6">
+                  <label>Voorkeuren</label>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" checked id="switchSunrise" type="checkbox">
+                    <label class="form-check-label" for="switchSunrise">Meer ochtendstops (zonsopgang)</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" id="switchBoat" type="checkbox">
+                    <label class="form-check-label" for="switchBoat">Husky-rit opnemen</label>
+                  </div>
+                </div>
+                <div class="col-6">
+                <label for="upload">Upload een referentiebeeld (optioneel)</label>
+                  <input class="form-control" accept="image/*" id="upload" type="file">
+                  <div class="text-secondary">Voor de demo: bestand wordt niet opgeslagen.</div>
+                </div>
+              </div>
+              <!-- Textarea -->
+              <div class="row">
+                <label  for="opmerking">Notities</label>
+                <textarea class="form-control" id="opmerking"
+                  placeholder="bv. ‘Meer foto-momenten’, ‘minder kou', ‘extra tijd bij de huskies'..."
+                  rows="3"></textarea>
+              </div>
+              <!-- Checks -->
+              <div class="row">
+                <label>Checklijst</label>
+                <div class="form-check">
+                  <input class="form-check-input" id="check1" type="checkbox" value="">
+                  <label class="form-check-label" for="check1">Ik plan buffer-tijd tussen activiteiten</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" checked id="check2" type="checkbox" value="">
+                  <label class="form-check-label" for="check2">Ik hou rekening met kou en rustmomenten</label>
+                </div>
+              </div>
+              <!-- Radios -->
+              <div class="row pt-2">
+                <label >Stijl van reizen</label>
+                <div class="form-check">
+                  <input class="form-check-input" id="radio1" name="stijl" type="radio">
+                  <label class="form-check-label" for="radio1">Relax — minder stops, meer sfeer</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" checked id="radio2" name="stijl" type="radio">
+                  <label class="form-check-label" for="radio2">Gebalanceerd — highlights met pauzes</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" id="radio3" name="stijl" type="radio">
+                  <label class="form-check-label" for="radio3">Intens — veel zien op korte tijd</label>
+                </div>
+              </div>
+
+
+
+              <div id="liveAlertPlaceholder"></div>
+              <div>
+                <button class="btn btn-info text-dark btn-lg d-grid mt-3" style="width: 100%;" id="liveAlertBtn" type="button">Verzend mijn reisplan</button>
+              </div>
+              <p class="text-secondary small mt-3 mb-0">Disclaimer: demo. Maar je route voelt al verrassend echt.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+  FOOTER
+  TODO: eenvoudige footer: text-center py-3 bg-black text-secondary border-top border-secondary
+  Tekst: © 2026 WollenSokkenSafari™ – Alle rechten voorbehouden.
+============================================= -->
+<footer class="text-center py-3 bg-light text-secondary border-top border-secondary">
+  <small>&copy; 2026 WollenSokkenSafari&trade; – Alle rechten voorbehouden.</small>
+</footer>
+
+<!-- TODO: voeg de Bootstrap JS bundle CDN link toe (met Popper) -->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+<!-- Eigen JS - NIET AANPASSEN -->
+<script>
+  /*
+  * Dit script staat na het Bootstrap script.
+  * Dit script is om de voorbeelden eenvoudiger te houden embedded in plaats van gelinkt.
+  */
+
+  // bewaar een verwijzing naar het element waarin de alerts moeten komen 
+  const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+
+  // Maak een functie "appendAlert()" aan, die je kan aanroepen met 
+  // * de tekst die getoond moet worden (message)
+  // * de kleur voor het alert (type)
+  const appendAlert = (message, type) => {
+    // maak een div aan die als 'wrapper' dient voor de alert
+    const wrapper = document.createElement('div');
+    // stop de alert met message en type in de wrapper div
+    wrapper.innerHTML =
+      `<div class="alert alert-${type} alert-dismissible" role="alert">
+        <div>${message}</div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>`;
+
+    // voeg de wrapper toe aan de html pagina, op de gewenste plaats
+    alertPlaceholder.append(wrapper);
+  }
+
+  // haal een verwijzing op naar de knop waarop je wil klikken
+  const alertTrigger = document.getElementById('liveAlertBtn');
+  // als dit element bestaat 
+  if (alertTrigger) {
+    // dan hangen we er een functie aan die uitgevoerd wordt als er op ge"click"t wordt.
+    alertTrigger.addEventListener('click', () => {
+      const stop = document.getElementById('stopSelect')?.value || 'een stop naar keuze';
+      appendAlert(`Inschrijving ontvangen! Je reis begint bij: ${stop}`, 'info');
+    })
+  }
+</script>
+</body>
+</html>
